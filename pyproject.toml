@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "3b-deliveryguard"
+version = "0.1.0"
+description = "Evidence-based software delivery assurance"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "3B-DeliveryGuard contributors" }]
+dependencies = []
+
+[project.scripts]
+deliveryguard = "deliveryguard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
