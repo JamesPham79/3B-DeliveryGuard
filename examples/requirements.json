@@ -1,0 +1,38 @@
+{
+  "requirements": [
+    {
+      "id": "FR-001",
+      "type": "functional",
+      "title": "User login",
+      "description": "Allow a registered user to authenticate.",
+      "status": "approved",
+      "source": {
+        "kind": "customer_confirmed",
+        "reference": "Workshop notes 2026-10-20"
+      },
+      "acceptance_criteria": [
+        "Given valid credentials, when the user submits the login form, then a session is created."
+      ],
+      "code_refs": [
+        "src/auth/login.py"
+      ],
+      "test_refs": [
+        "tests/test_login.py"
+      ]
+    },
+    {
+      "id": "BR-001",
+      "type": "business_rule",
+      "title": "Lock after repeated failures",
+      "description": "Lock an account after the configured number of consecutive failed attempts.",
+      "status": "proposed",
+      "source": {
+        "kind": "inferred",
+        "reference": "Needs product owner confirmation"
+      },
+      "acceptance_criteria": [],
+      "code_refs": [],
+      "test_refs": []
+    }
+  ]
+}
